@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #99d3f3;
+}
+.check{
+	margin: 20px 50px ;
+}
+ul li{
+	list-style: none;
+	padding: 5px;
+}
+.check ul li a{
+	text-decoration: none;
+	color: maroon;
+	font-size: 16px;
+}
+
+@media all and (max-width:1400px) and (min-width:750px){
+	.check ul li a:after{
+		content: "("attr(data-email)")";
+		font-size: 14px;
+		font-style: italic;
+		color: rgb(44, 44, 44);
+		padding: 10px;
+		
+	}
+}
+@media all and (max-width: 750px) and (min-width:450px) {
+	.check ul li a {
+		color: green;
+		font-size: 12px;
+
+	}
+
+	.check ul li a:before {
+		content: "Email: ";
+		font-weight: bold;
+	}
+}
+@media all and (max-width:449px) and (min-width: 299px), (min-width: 1001px){
+	.check ul li a{
+		padding-left: 50px;
+		background: url(img/icons8-email-open-48.png) left center no-repeat;
+		width: fit-content;
+	}
+}
+#boxes{
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row ;
+	justify-content:space-evenly;
+	align-items:center;
+	width: 1200px;
+	height: 400px;
+background-color: #b6dfb7;
+}
+
+.box1{
+	height: 100px;
+	width: 250px;
+	background-color: rgb(35, 173, 0);
+	display: inline-block;
+	text-align: center;
+	align-self: flex-start;
+}
+.box2 {
+	height: 50px;
+	width: 250px;
+	background-color: rgb(4, 189, 202);
+	display: inline-block;
+	text-align: center;
+	align-self: center;
+}
+.box3 {
+	height: 170px;
+	width: 250px;
+	background-color: rgb(202, 149, 4);
+	display: inline-block;
+	text-align: center;
+	align-self: flex-end;
+}
+.box4 {
+	height: 200px;
+	width: 250px;
+	background-color: rgb(202, 4, 4);
+	display: inline-block;
+	text-align: center;
+}
