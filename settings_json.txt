@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.colorTheme": "Material Theme Ocean",
+    "workbench.iconTheme": "material-icon-theme",
+    "liveServer.settings.CustomBrowser": "firefox",
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "beautify.config": ""
+}
