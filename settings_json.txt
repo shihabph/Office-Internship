@@ -8,3 +8,165 @@
     },
     "beautify.config": ""
 }
+
+//Office PC
+{
+
+    // EDITOR MODIFICATIONS
+    "editor.fontFamily": "consolas",
+	"editor.lineHeight": 24,
+	"editor.fontLigatures": true,
+    "explorer.decorations.badges": false,
+	"editor.letterSpacing": 0.2,
+	"editor.renderWhitespace": "none",
+	"editor.cursorStyle": "line",
+    "editor.showFoldingControls": "always",
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.mouseWheelZoom": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.insertSpaces": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.autoIndent": "advanced",
+    "editor.fontWeight":"500",
+
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+    //         {
+    //             "scope": "variable.other.php, punctuation.definition.variable, variable.language.this, variable.other.global,",
+    //             "settings": {
+    //                 "fontStyle": "",
+    //                 "foreground": "#d0f000"
+    //             }
+    //         },
+    //         {
+    //             "scope": "entity.other.inherited-class",
+    //             "settings": {
+    //                 "fontStyle": "",
+    //                 "foreground": "#0086b3"
+    //             }
+    //         },
+    //         // {
+    //         //     "scope": "string.quoted, keyword.other.unit",
+    //         //     "settings": {
+    //         //         "foreground": "#ffe4e1",
+    //         //     }
+    //         // },
+            {
+                "scope": "entity.name.function, support.function",
+                "settings": {
+                    "foreground": "#13a86a",
+                    // "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "storage.modifier, storage.type, constant.language, storage.type.function",
+                "settings": {
+                    "foreground": "#3effcf",
+                    // "fontStyle": "italic"
+                }
+            },
+                    {
+                        "scope": "constant.numeric",
+                        "settings": {
+                            "foreground": "#c40101"
+                        }
+                    },
+            {
+                "scope": "keyword.operator",
+                "settings": {
+                    "foreground": "#00e1ff",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "keyword, support.function",
+                "settings": {
+                    "foreground": "#a05f34",
+                    // "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "variable.other.property",
+                "settings": {
+                    "foreground": "#9cc575",
+                    // "fontStyle": "italic"
+                }
+            },
+            //         {
+            //             "scope": "variable.other.property.php, support.type.property-name, entity.name.tag, variable.other.object.js ",
+            //             "settings": {
+            //                 "foreground": "#1e90ff"
+            //             }
+            //         }
+        ]
+    },
+    
+    
+    
+    // PHP SET UP
+    "php.validate.executablePath": "E:/wamp64/bin/php/php7.3.12/php.exe",
+    "phpfmt.php_bin": "E:/wamp64/bin/php/php7.3.12/php.exe",
+    "phpfmt.psr2": false,
+    "phpfmt.exclude":[
+        "AllmanStyleBraces"
+    ],
+    "phpfmt.passes": [
+        "AlignDoubleArrow",
+        "SpaceAroundParentheses",
+        "ShortArray"
+    ],
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    },
+    "php.suggest.basic": false,
+    
+
+
+    // WORKBENCH
+    "workbench.colorCustomizations": {
+
+        "activityBar.background": "#000",
+        "activityBar.foreground": "#14b349",
+        "statusBar.background": "#013111",
+        "statusBar.foreground": "#b5b803",
+        "editorLineNumber.foreground": "#8BADC1",
+        // "editor.lineHighlightBackground": "#021e45",
+        // "editorOverviewRuler.errorForeground": "#fff",
+        "sideBar.background": "#000C1D",
+        // "sideBar.background": "#001122",
+        "sideBar.border": "#102a44",
+        "sideBar.foreground": "#8BADC1",
+        "titleBar.activeBackground": "#000",
+        // "editor.background": "#150e06",
+        // "editor.foreground": "#d4d4d4",
+        // curvy red underline remove
+        // "editorError.foreground": "#00000000",
+        // "editorWarning.foreground": "#00000000",
+        // "editorInfo.foreground": "#00000000"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "material-icon-theme",
+    
+    // Other Configurations
+    "material-icon-theme.activeIconPack": "vue_vuex",
+    "window.zoomLevel": 0,
+    "editor.wrappingIndent": "indent",
+    "workbench.colorTheme": "Material Ocean Next Theme +",
+    "editor.codeActionsOnSave": {
+    
+    },
+    "editor.wordWrap": "on",
+    "liveServer.settings.donotVerifyTags": true,
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "terminal.integrated.localEchoStyle": "dim",
+    // "blade.format.enable": true,
+}
